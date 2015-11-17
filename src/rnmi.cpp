@@ -32,7 +32,7 @@ int main(int argc, char** argv)
 	long t_begin=get_cpu_time();
 	int randseed=int(time(NULL));
 	ZRANDOMv3 rg(randseed);
-	int nsample=10;
+    int nsample=10000;
 	if(argc>=4) nsample=atoi(argv[3]);
 //	cout<<"nsample="<<nsample<<endl;
 	

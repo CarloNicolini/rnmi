@@ -29,7 +29,7 @@ int main(int argc, char** argv)
 {
 	//read the first argument to set the function.
 	if(argc != 3) show_help_short(argv);
-	long t_begin=get_cpu_time();
+        //long t_begin=get_cpu_time();
 	
 	ifstream fa(argv[1]);
 	ifstream fb(argv[2]);

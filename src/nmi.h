@@ -189,7 +189,7 @@ double compute_rnmi(vector<int> pa, vector<int> pb)
 	for(int q=0;q<qa;q++){
 		for(int idx=0;idx<A[q].size();idx++){
 			double prob=1.0*B[q][idx]/n;
-			int t=A[q][idx];
+            //int t=A[q][idx];
 			Iab += prob*log(prob);
 		}
 	}
