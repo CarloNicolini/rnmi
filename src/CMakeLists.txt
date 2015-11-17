@@ -9,5 +9,5 @@ if(MATLAB_SUPPORT)
 endif(MATLAB_SUPPORT)
 
 if(OCTAVE_SUPPORT)
-    octave_add_oct(rnmi_oct SOURCES rnmi_mx.cpp zrg.cpp nmi.h "mex")
+    octave_add_oct(rnmi_oct SOURCES rnmi_mx.cpp zrg.cpp nmi.h EXTENSION "mex")
 endif(OCTAVE_SUPPORT)

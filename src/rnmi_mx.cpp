@@ -33,22 +33,14 @@ void mexFunction(int nOutputArgs, mxArray *outputArgs[], int nInputArgs, const m
     ZRANDOMv3 rg(randseed);
 
     const mxArray* p1 = inputArgs[0];
-    const mxArray* p2 = inputArgs[0];
-
-//    if ((mxGetNumberOfDimensions(p1)>1) || (mxGetNumberOfDimensions(p2)>1))
-//    {
-//        mexPrintf("rnmi works with row membership vector 1xN");
-//        printUsage();
-//        return;
-//    }
+    const mxArray* p2 = inputArgs[1];
 
     const size_t n1 = mxGetNumberOfElements(p1);
     const size_t n2 = mxGetNumberOfElements(p2);
 
     if (n1!=n2)
     {
-        mexPrintf("The two partitions have different number of elements");
-        printUsage();
+        mexErrMsgTxt("The two partitions have different number of elements.");
         return;
     }
 
